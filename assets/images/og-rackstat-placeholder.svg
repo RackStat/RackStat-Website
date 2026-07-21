@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">RackStat social sharing placeholder</title>
+  <desc id="desc">RackStat, ten channels, one purpose-built system. Built by a breeder and developed in Scotland.</desc>
+  <rect width="1200" height="630" fill="#11130f"/>
+  <rect x="54" y="54" width="1092" height="522" fill="#171a15" stroke="#3b4136" stroke-width="2"/>
+  <rect x="74" y="74" width="8" height="8" fill="#db9236"/>
+  <rect x="1118" y="548" width="8" height="8" fill="#db9236"/>
+  <text x="100" y="146" fill="#db9236" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3">RACKSTAT / V1</text>
+  <text x="100" y="276" fill="#f1ede2" font-family="Arial, sans-serif" font-size="76" font-weight="700">Ten channels.</text>
+  <text x="100" y="362" fill="#f1ede2" font-family="Arial, sans-serif" font-size="76" font-weight="700">One system.</text>
+  <text x="100" y="434" fill="#a8aea3" font-family="Arial, sans-serif" font-size="28">Built by a breeder. Engineered without compromise.</text>
+  <line x1="100" y1="490" x2="1100" y2="490" stroke="#3b4136" stroke-width="2"/>
+  <text x="100" y="532" fill="#8f9589" font-family="Courier New, monospace" font-size="20">10 INDEPENDENT HEATING CHANNELS</text>
+  <text x="1100" y="532" fill="#8f9589" font-family="Courier New, monospace" font-size="20" text-anchor="end">DEVELOPED IN SCOTLAND</text>
+</svg>
