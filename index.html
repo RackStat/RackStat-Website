@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RackStat | Ten-Channel Reptile Rack Thermostat</title>
+  <meta name="description" content="RackStat is a ten-channel reptile rack thermostat and monitoring platform being developed in Scotland, with independent temperature control, energy monitoring and fault detection for every rack level.">
+  <meta name="theme-color" content="#11130f">
+  <link rel="canonical" href="https://rackstat.co.uk/">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-placeholder.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RackStat">
+  <meta property="og:title" content="RackStat | Ten-Channel Reptile Rack Thermostat">
+  <meta property="og:description" content="Independent temperature control, energy monitoring and fault detection for every rack level. Developed in Scotland.">
+  <meta property="og:url" content="https://rackstat.co.uk/">
+  <meta property="og:image" content="https://rackstat.co.uk/assets/images/og-rackstat-placeholder.svg">
+  <meta property="og:image:alt" content="RackStat — ten channels, one purpose-built system">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RackStat | Ten-Channel Reptile Rack Thermostat">
+  <meta name="twitter:description" content="A reptile rack thermostat and monitoring system being developed in Scotland.">
+  <meta name="twitter:image" content="https://rackstat.co.uk/assets/images/og-rackstat-placeholder.svg">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "RackStat",
+      "url": "https://rackstat.co.uk/",
+      "description": "A ten-channel reptile rack thermostat and monitoring platform in active development in Scotland."
+    }
+  </script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" data-site-header>
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="RackStat home">
+        <span class="brand-mark" aria-hidden="true"><span>RS</span></span>
+        <span class="brand-name">RackStat</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary" data-site-nav>
+        <a href="#home" aria-current="page">Home</a>
+        <a href="#mission">Mission</a>
+        <a href="#features">Features</a>
+        <a href="#development">Development</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#development">Follow development</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot status-dot--heating" aria-hidden="true"></span> V1 / Active development / Scotland</p>
+          <h1 id="hero-title">Ten channels.<br>One purpose-built system.</h1>
+          <p class="hero-tagline">Built by a breeder. Engineered without compromise.</p>
+          <p class="hero-summary">RackStat is a ten-channel thermostat and monitoring platform designed specifically for reptile racks. Every level gets its own probe, heating output and control channel, giving breeders a clearer way to manage rack heating.</p>
+          <div class="hero-actions" aria-label="Page shortcuts">
+            <a class="button button--primary" href="#system">Explore RackStat</a>
+            <a class="button button--quiet" href="#development">View development <span aria-hidden="true">↓</span></a>
+          </div>
+          <dl class="hero-specs" aria-label="RackStat V1 planned specification">
+            <div><dt>Channels</dt><dd>10 independent</dd></div>
+            <div><dt>Control</dt><dd>Local + Wi-Fi</dd></div>
+            <div><dt>Status</dt><dd>Prototype stage</dd></div>
+          </dl>
+        </div>
+
+        <figure class="unit-concept" aria-labelledby="unit-caption">
+          <div class="unit-topline">
+            <span>RackStat / V1</span>
+            <span>Development concept</span>
+          </div>
+          <div class="unit-face">
+            <div class="unit-display" aria-label="Concept interface showing five example thermostat channels">
+              <div class="display-head">
+                <div>
+                  <span class="display-kicker">Rack overview</span>
+                  <strong>10 channels online</strong>
+                </div>
+                <span class="display-time">LOCAL</span>
+              </div>
+              <ol class="display-channels">
+                <li>
+                  <span class="channel-id">CH 01</span>
+                  <strong>31.8<sup>°C</sup></strong>
+                  <span class="target">Set 32.0</span>
+                  <span class="state state--heating"><span aria-hidden="true"></span> Heating 42%</span>
+                </li>
+                <li>
+                  <span class="channel-id">CH 02</span>
+                  <strong>31.9<sup>°C</sup></strong>
+                  <span class="target">Set 32.0</span>
+                  <span class="state state--heating"><span aria-hidden="true"></span> Heating 38%</span>
+                </li>
+                <li>
+                  <span class="channel-id">CH 03</span>
+                  <strong>32.0<sup>°C</sup></strong>
+                  <span class="target">Set 32.0</span>
+                  <span class="state state--holding"><span aria-hidden="true"></span> Holding</span>
+                </li>
+                <li>
+                  <span class="channel-id">CH 04</span>
+                  <strong>—</strong>
+                  <span class="target">Set 30.0</span>
+                  <span class="state state--fault"><span aria-hidden="true">!</span> Probe fault</span>
+                </li>
+                <li>
+                  <span class="channel-id">CH 05</span>
+                  <strong>31.7<sup>°C</sup></strong>
+                  <span class="target">Set 32.0</span>
+                  <span class="state state--heating"><span aria-hidden="true"></span> Heating 47%</span>
+                </li>
+              </ol>
+              <div class="display-footer">
+                <span>Load 184 W</span>
+                <span>Internal 28.4°C</span>
+                <span>No active alarm</span>
+              </div>
+            </div>
+            <div class="unit-controls" aria-hidden="true">
+              <span class="control-label">SELECT / SET</span>
+              <span class="encoder"><span></span></span>
+              <span class="vent vent--a"></span>
+              <span class="vent vent--b"></span>
+            </div>
+          </div>
+          <div class="unit-ports" aria-hidden="true">
+            <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span>
+            <span>06</span><span>07</span><span>08</span><span>09</span><span>10</span>
+          </div>
+          <figcaption id="unit-caption">Interface and enclosure study — shown to explain the intended system, not final production hardware.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="problem-section" aria-labelledby="problem-title">
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">The problem</p>
+          <h2 id="problem-title">Ten levels. Ten heat sources. Nowhere sensible to control them.</h2>
+        </div>
+        <div class="reading-copy">
+          <p>A ten-level snake rack may have ten separate heat sources, but most readily available thermostats are designed around one probe and one control point.</p>
+          <p>Use one or two thermostats and several levels have to share a reading. Give every level its own thermostat and the rack gains a pile of boxes, plugs, probe leads and power cables.</p>
+        </div>
+      </div>
+
+      <div class="control-comparison">
+        <article class="comparison-panel comparison-panel--conventional">
+          <header>
+            <span class="panel-index">A</span>
+            <div><h3>What most keepers can assemble</h3><p>One or two thermostats shared across a ten-level rack.</p></div>
+          </header>
+          <div class="rack-diagram rack-diagram--shared" aria-label="Diagram of ten snake rack levels sharing two thermostat probes">
+            <div class="thermostat-stack" aria-hidden="true">
+              <div class="thermostat-node thermostat-node--a"><span>T/STAT A</span><small>Levels 01–05</small><i></i></div>
+              <div class="thermostat-node thermostat-node--b"><span>T/STAT B</span><small>Levels 06–10</small><i></i></div>
+            </div>
+            <div class="cable-runs" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <ol>
+              <li><span><b>01</b> Rack level 01</span><strong>Group A</strong></li>
+              <li><span><b>02</b> Rack level 02</span><strong>Group A</strong></li>
+              <li class="probe-level"><span><b>03</b> Rack level 03</span><strong>Group A</strong><em>Probe A</em></li>
+              <li><span><b>04</b> Rack level 04</span><strong>Group A</strong></li>
+              <li><span><b>05</b> Rack level 05</span><strong>Group A</strong></li>
+              <li><span><b>06</b> Rack level 06</span><strong>Group B</strong></li>
+              <li><span><b>07</b> Rack level 07</span><strong>Group B</strong></li>
+              <li class="probe-level"><span><b>08</b> Rack level 08</span><strong>Group B</strong><em>Probe B</em></li>
+              <li><span><b>09</b> Rack level 09</span><strong>Group B</strong></li>
+              <li><span><b>10</b> Rack level 10</span><strong>Group B</strong></li>
+            </ol>
+          </div>
+          <p class="diagram-note"><span aria-hidden="true">△</span> Two readings stand in for ten different levels. Individual control means repeating the thermostat hardware, wiring and plugs.</p>
+        </article>
+
+        <article class="comparison-panel comparison-panel--rackstat">
+          <header>
+            <span class="panel-index">B</span>
+            <div><h3>The RackStat direction</h3><p>One unit containing ten complete thermostat channels.</p></div>
+          </header>
+          <div class="rack-diagram rack-diagram--independent" aria-label="Diagram of ten snake rack levels with independent probes and heating control">
+            <ol>
+              <li><span><b>01</b> Level 1</span><strong>31.8°C</strong><i>42%</i></li>
+              <li><span><b>02</b> Level 2</span><strong>31.9°C</strong><i>38%</i></li>
+              <li><span><b>03</b> Level 3</span><strong>32.0°C</strong><i>Hold</i></li>
+              <li><span><b>04</b> Level 4</span><strong class="fault-text">Fault</strong><i>Off</i></li>
+              <li><span><b>05</b> Level 5</span><strong>31.7°C</strong><i>47%</i></li>
+              <li><span><b>06</b> Level 6</span><strong>30.6°C</strong><i>33%</i></li>
+              <li><span><b>07</b> Level 7</span><strong>31.0°C</strong><i>Hold</i></li>
+              <li><span><b>08</b> Level 8</span><strong>30.8°C</strong><i>24%</i></li>
+              <li><span><b>09</b> Level 9</span><strong>29.7°C</strong><i>29%</i></li>
+              <li><span><b>10</b> Level 10</span><strong>30.0°C</strong><i>Hold</i></li>
+            </ol>
+          </div>
+          <p class="diagram-note diagram-note--good"><span aria-hidden="true">✓</span> Every level keeps its own probe, target and output, without ten separate control boxes.</p>
+        </article>
+      </div>
+
+      <aside class="cable-burden" aria-labelledby="cable-burden-title">
+        <p class="eyebrow">The real-world compromise</p>
+        <div>
+          <h3 id="cable-burden-title">Independent control exists. Managing the installation is the awful part.</h3>
+          <p>With separate off-the-shelf thermostats, the useful control is scattered across several boxes. Probe cables cross power leads. Mains plugs and adapters gather behind the rack. The controls end up wherever the cables reach, which is often the worst possible place to see or adjust them.</p>
+          <p>Then every change starts with the same question: <strong>which thermostat controls this level?</strong> RackStat is being built to remove that uncertainty, not simply hide the same cable problem inside a nicer cabinet.</p>
+        </div>
+        <dl>
+          <div><dt>At the rack</dt><dd>Multiple boxes in different positions</dd></div>
+          <div><dt>Behind it</dt><dd>Probe leads, heater leads and mains plugs</dd></div>
+          <div><dt>During changes</dt><dd>Trace the cable, find the control, check again</dd></div>
+        </dl>
+      </aside>
+
+      <article class="seasonal-control" aria-labelledby="seasonal-title">
+        <div class="seasonal-copy">
+          <p class="eyebrow">Breeding and seasonal changes</p>
+          <h3 id="seasonal-title">Changing a rack should not mean moving it.</h3>
+          <p>Cooling and warming periods can require planned temperature changes for a species or breeding group. That should be a controlled job, not an afternoon spent reaching behind racks, visiting several thermostats and wondering whether the right one was changed.</p>
+          <p>RackStat presets and per-channel settings are being designed so a keeper can choose the intended rack, review every affected channel and confirm the change from one place.</p>
+          <p class="concept-note">Planned V1 workflow — final preset behaviour will be proven during firmware and real-rack testing.</p>
+        </div>
+        <div class="seasonal-workflow" aria-label="Concept workflow for a planned seasonal temperature change">
+          <div class="workflow-toolbar"><span>Preset review</span><strong>Breeding season</strong></div>
+          <ol>
+            <li><span>01</span><div><strong>Select the right rack</strong><small>Rack and species group are clearly named.</small></div><b>Chosen</b></li>
+            <li><span>02</span><div><strong>Review all ten channels</strong><small>Existing and proposed settings stay visible.</small></div><b>Review</b></li>
+            <li><span>03</span><div><strong>Confirm once</strong><small>Apply the planned change without tracing cables.</small></div><b>Ready</b></li>
+          </ol>
+          <div class="workflow-footer"><span>10 channels affected</span><span>Individual control retained</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="mission-section" id="mission" aria-labelledby="mission-title">
+      <div class="mission-grid">
+        <div class="mission-copy">
+          <p class="eyebrow">Why RackStat exists</p>
+          <h2 id="mission-title">Designed around the animals, the rack and the person maintaining it.</h2>
+          <blockquote>
+            <p>“RackStat started because I wanted a better way to control the heating in my own racks. I did not want one probe representing an entire stack of animals, and I did not want to build every rack around a collection of unrelated thermostats.”</p>
+          </blockquote>
+          <p>A thermostat should not become a sealed, disposable black box. Faults should be identifiable, settings should survive an interruption, and a damaged probe should be replaceable.</p>
+          <p>The first four-channel ESP32 prototype proved the basic control approach. The next job is less glamorous and more important: turn it into production-level hardware that can be built, tested, maintained and trusted.</p>
+        </div>
+        <div class="design-ledger" aria-label="RackStat design priorities">
+          <div class="ledger-header"><span>Design ledger</span><span>V1 priorities</span></div>
+          <dl>
+            <div><dt>01</dt><dd><strong>Independent control</strong><span>Each channel senses and regulates its own heating zone.</span></dd></div>
+            <div><dt>02</dt><dd><strong>Visible faults</strong><span>Probe, output and abnormal-heating conditions should be clear.</span></dd></div>
+            <div><dt>03</dt><dd><strong>Serviceable parts</strong><span>Replaceable probes and practical connectors, where possible.</span></dd></div>
+            <div><dt>04</dt><dd><strong>Local ownership</strong><span>Core control stays useful without a required subscription.</span></dd></div>
+            <div><dt>05</dt><dd><strong>Safe recovery</strong><span>Settings survive an interruption and restart behaviour is deliberate.</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="system-section" id="system" aria-labelledby="system-title">
+      <div class="section-heading section-heading--system">
+        <div>
+          <p class="eyebrow">V1 system overview</p>
+          <h2 id="system-title">One system. Ten independent heating zones.</h2>
+        </div>
+        <p>Each channel is intended to operate as a complete thermostat. Readings below are representative interface data, not live product telemetry.</p>
+      </div>
+
+      <div class="channel-console">
+        <div class="console-toolbar">
+          <div><span class="console-brand">RACKSTAT</span><span class="console-view">CHANNEL OVERVIEW / CONCEPT UI</span></div>
+          <div class="console-key"><span><i class="key-normal"></i>Normal</span><span><i class="key-heating"></i>Heating</span><span><i class="key-fault"></i>Fault</span></div>
+        </div>
+        <div class="channel-table" role="table" aria-label="Ten example RackStat channels">
+          <div class="channel-table-head" role="row">
+            <span role="columnheader">Channel</span><span role="columnheader">Current</span><span role="columnheader">Target</span><span role="columnheader">Output</span><span role="columnheader">Power</span><span role="columnheader">Probe</span>
+          </div>
+          <div class="channel-table-row is-heating" role="row"><span role="cell"><b>01</b> Upper A</span><span role="cell">31.8°C</span><span role="cell">32.0°C</span><span role="cell"><i style="--output:42%"></i>42%</span><span role="cell">38 W</span><span role="cell">OK</span></div>
+          <div class="channel-table-row is-heating" role="row"><span role="cell"><b>02</b> Upper B</span><span role="cell">31.9°C</span><span role="cell">32.0°C</span><span role="cell"><i style="--output:38%"></i>38%</span><span role="cell">34 W</span><span role="cell">OK</span></div>
+          <div class="channel-table-row" role="row"><span role="cell"><b>03</b> Level 03</span><span role="cell">32.0°C</span><span role="cell">32.0°C</span><span role="cell"><i style="--output:0%"></i>Hold</span><span role="cell">0 W</span><span role="cell">OK</span></div>
+          <div class="channel-table-row is-fault" role="row"><span role="cell"><b>04</b> Level 04</span><span role="cell">—</span><span role="cell">30.0°C</span><span role="cell"><i style="--output:0%"></i>Off</span><span role="cell">0 W</span><span role="cell"><strong>Fault</strong></span></div>
+          <div class="channel-table-row is-heating" role="row"><span role="cell"><b>05</b> Level 05</span><span role="cell">31.7°C</span><span role="cell">32.0°C</span><span role="cell"><i style="--output:47%"></i>47%</span><span role="cell">42 W</span><span role="cell">OK</span></div>
+          <div class="channel-table-row is-heating" role="row"><span role="cell"><b>06</b> Level 06</span><span role="cell">30.6°C</span><span role="cell">31.0°C</span><span role="cell"><i style="--output:33%"></i>33%</span><span role="cell">28 W</span><span role="cell">OK</span></div>
+          <div class="channel-table-row" role="row"><span role="cell"><b>07</b> Level 07</span><span role="cell">31.0°C</span><span role="cell">31.0°C</span><span role="cell"><i style="--output:0%"></i>Hold</span><span role="cell">0 W</span><span role="cell">OK</span></div>
+          <div class="channel-table-row is-heating" role="row"><span role="cell"><b>08</b> Level 08</span><span role="cell">30.8°C</span><span role="cell">31.0°C</span><span role="cell"><i style="--output:24%"></i>24%</span><span role="cell">22 W</span><span role="cell">OK</span></div>
+          <div class="channel-table-row is-heating" role="row"><span role="cell"><b>09</b> Lower A</span><span role="cell">29.7°C</span><span role="cell">30.0°C</span><span role="cell"><i style="--output:29%"></i>29%</span><span role="cell">26 W</span><span role="cell">OK</span></div>
+          <div class="channel-table-row" role="row"><span role="cell"><b>10</b> Lower B</span><span role="cell">30.0°C</span><span role="cell">30.0°C</span><span role="cell"><i style="--output:0%"></i>Hold</span><span role="cell">0 W</span><span role="cell">OK</span></div>
+        </div>
+        <div class="console-footer"><span>Demonstration values</span><span>Per-channel data shown separately</span><span>UI subject to firmware development</span></div>
+      </div>
+    </section>
+
+    <section class="features-section" id="features" aria-labelledby="features-title">
+      <div class="section-heading section-heading--narrow">
+        <p class="eyebrow">Planned V1 capability</p>
+        <h2 id="features-title">More useful detail. Fewer hidden assumptions.</h2>
+        <p>RackStat is being designed to show what each heating channel is doing, retain the settings that matter and provide useful information when something changes.</p>
+      </div>
+
+      <div class="feature-bands">
+        <article class="feature-band">
+          <header><span>01 / Control</span><h3>Each output answers to its own probe.</h3></header>
+          <div class="feature-band-body">
+            <p>Ten temperature inputs and ten separately controlled outputs are the foundation of the design. Channel targets, modes, calibration and alarms remain independent.</p>
+            <ul class="technical-list"><li>Pulse-proportional control</li><li>On/off thermostat mode</li><li>Suitable dimming control planned</li><li>Per-channel calibration and alarms</li></ul>
+          </div>
+        </article>
+        <article class="feature-band feature-band--dense">
+          <header><span>02 / Monitoring</span><h3>Know what each level is using.</h3></header>
+          <div class="feature-band-body">
+            <p>Planned current sensing adds heater activity and energy use to each channel record. That can help show when a panel draws unexpectedly, stops drawing power or behaves differently from neighbouring levels.</p>
+            <div class="monitor-readout" aria-label="Example monitoring readout">
+              <span><small>Channel</small><b>05</b></span><span><small>Temperature</small><b>31.7°C</b></span><span><small>Demand</small><b>47%</b></span><span><small>Draw</small><b>42 W</b></span>
+            </div>
+          </div>
+        </article>
+        <article class="feature-band">
+          <header><span>03 / Reliability</span><h3>Faults should have names, not mysteries.</h3></header>
+          <div class="feature-band-body">
+            <p>Probe disconnection, abnormal heating, enclosure temperature and output behaviour are being considered as distinct fault states. Intended safeguards include watchdog operation, audible alerts and safe output behaviour.</p>
+            <ul class="technical-list technical-list--statuses"><li><span class="status-code">P01</span>Probe disconnected</li><li><span class="status-code">T02</span>Internal temperature warning</li><li><span class="status-code">H03</span>Unexpected heater draw</li></ul>
+          </div>
+        </article>
+        <article class="feature-band feature-band--last">
+          <header><span>04 / Access</span><h3>Useful at the rack. Useful across the room.</h3></header>
+          <div class="feature-band-body">
+            <p>The front display and rotary control are intended for direct use. A local web interface and over-the-air firmware updates are planned for broader visibility and maintenance.</p>
+            <p class="plain-note"><strong>No mandatory subscription.</strong> Core thermostat control, local monitoring and essential safety functions should remain part of the product itself.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="memory-section" aria-labelledby="memory-title">
+      <div class="memory-copy">
+        <p class="eyebrow">Power interruption</p>
+        <h2 id="memory-title">A power cut should not erase your setup.</h2>
+        <p>Temperature targets, channel modes, calibration values and other essential settings are intended to remain stored when power is interrupted.</p>
+        <p>When power returns, RackStat should recover safely without requiring the user to crawl behind a rack and rebuild every setting.</p>
+        <aside class="accuracy-note"><strong>Important:</strong> this is configuration memory, not backup mains power. Heating still stops during a power cut.</aside>
+      </div>
+      <div class="recovery-sequence" aria-label="Planned power recovery sequence">
+        <div><span>01</span><strong>Power interrupted</strong><small>Heating outputs stop</small></div>
+        <i aria-hidden="true"></i>
+        <div><span>02</span><strong>Configuration retained</strong><small>Targets, modes, calibration</small></div>
+        <i aria-hidden="true"></i>
+        <div><span>03</span><strong>Controlled recovery</strong><small>Checks before outputs resume</small></div>
+      </div>
+    </section>
+
+    <section class="engineering-section" aria-labelledby="engineering-title">
+      <div class="section-heading section-heading--split">
+        <div><p class="eyebrow">Safety and thermal design</p><h2 id="engineering-title">Designed as electrical equipment, not a hobby box.</h2></div>
+        <p class="reading-copy">The production design is being developed with certification, electrical safety, thermal performance and manufacturability in mind. Compliance work is still ahead; no approval is being claimed.</p>
+      </div>
+
+      <div class="engineering-grid">
+        <figure class="airflow-panel">
+          <figcaption><span>Enclosure study</span><strong>Cooling follows the heat.</strong></figcaption>
+          <div class="enclosure-cutaway" aria-label="Diagram of planned lower fresh-air intake and upper hot-air exhaust">
+            <div class="airflow-label airflow-label--out">Warm air exhaust <b>↑</b></div>
+            <div class="component-bank component-bank--hot"><span>Mains switching</span><i></i><i></i><i></i></div>
+            <div class="air-path"><i></i><i></i><i></i></div>
+            <div class="component-bank component-bank--cool"><span>Control + low voltage</span><i></i><i></i></div>
+            <div class="airflow-label airflow-label--in">Fresh air intake <b>↑</b></div>
+          </div>
+          <p>Cool air is intended to enter near the lower components and leave near the hottest upper section. Fan speed will respond to internal temperature, with fault handling if the enclosure becomes too hot.</p>
+        </figure>
+
+        <div class="engineering-notes">
+          <article><span>A</span><div><h3>Separate what should be separate.</h3><p>Mains and low-voltage sections are being laid out with physical separation, fused input and independent low-voltage protection in mind.</p></div></article>
+          <article><span>B</span><div><h3>Know the enclosure temperature.</h3><p>Internal monitoring and active push-pull airflow are part of the design, not accessories added after the electronics are packed in.</p></div></article>
+          <article><span>C</span><div><h3>Choose a safe failure state.</h3><p>Probe loss, watchdog events, abnormal heating and over-temperature conditions need explicit output behaviour and clear fault reporting.</p></div></article>
+          <article><span>D</span><div><h3>Keep maintenance practical.</h3><p>Serviceable connectors and replaceable parts are preferred where they improve the useful life of the product.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="probe-section" aria-labelledby="probe-title">
+      <div class="probe-visual" aria-hidden="true">
+        <div class="socket-bank"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span><span>08</span><span>09</span><span>10</span></div>
+        <div class="connector"><i></i><i></i><i></i><span></span></div>
+        <div class="cable"></div>
+      </div>
+      <div class="probe-copy">
+        <p class="eyebrow">Probe and connector direction</p>
+        <h2 id="probe-title">Probes designed to be replaced, not permanently trapped in the system.</h2>
+        <p>RackStat is being designed around removable DS18B20-based probes and secure connectors so that a damaged cable does not mean replacing the entire thermostat.</p>
+        <dl class="spec-list">
+          <div><dt>Current direction</dt><dd>M8, A-coded, three-pin locking connector</dd></div>
+          <div><dt>Probe cable</dt><dd>Silicone cable; 2 m, 5 m and 10 m options under consideration</dd></div>
+          <div><dt>Still to prove</dt><dd>Final sourcing, mounting method and long-term testing</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="development-section" id="development" aria-labelledby="development-title">
+      <div class="section-heading section-heading--split">
+        <div><p class="eyebrow">Development record</p><h2 id="development-title">What is proven. What comes next.</h2></div>
+        <div class="reading-copy"><p>RackStat is not yet a retail product. The first prototype validated the core control approach. The full ten-channel PCB, enclosure, firmware and safety systems are now being worked toward a production-level prototype.</p><p>No artificial percentages. No invented launch date.</p></div>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item is-complete">
+          <div class="timeline-marker"><span>01</span></div>
+          <div class="timeline-content"><header><p>Foundation</p><span>Proven in early prototype</span></header><ul><li>Rack-heating problem identified</li><li>Four-channel ESP32 prototype constructed</li><li>Independent DS18B20 sensing tested</li><li>Pulse-proportional control developed</li></ul></div>
+        </li>
+        <li class="timeline-item is-active">
+          <div class="timeline-marker"><span>02</span></div>
+          <div class="timeline-content"><header><p>Production architecture</p><span>Current focus</span></header><ul><li>Ten-channel specification created</li><li>Current sensing included in V1 scope</li><li>Wi-Fi and OTA architecture planned</li><li>Custom PCB development started</li><li>Probe connector sourcing underway</li></ul></div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"><span>03</span></div>
+          <div class="timeline-content"><header><p>Production-level prototype</p><span>Next major build</span></header><ul><li>Final schematic and PCB layout</li><li>Manufactured prototype boards</li><li>Enclosure and airflow testing</li><li>Firmware integration and fault testing</li><li>Real-rack testing</li></ul></div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"><span>04</span></div>
+          <div class="timeline-content"><header><p>Field testing</p><span>Planned</span></header><ul><li>Small founder testing group</li><li>Long-duration operation</li><li>Honest positive and negative feedback</li><li>Hardware and firmware revisions</li><li>Manufacturing cost review</li></ul></div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker"><span>05</span></div>
+          <div class="timeline-content"><header><p>Initial production</p><span>Future stage</span></header><ul><li>Final supplier selection</li><li>Compliance and safety work</li><li>Pilot production run</li><li>Early customer delivery</li><li>Continued firmware support</li></ul></div>
+        </li>
+      </ol>
+
+      <aside class="testing-note">
+        <div><p class="eyebrow">Founder testing</p><h3>Real racks before retail shelves.</h3></div>
+        <p>When a production-level prototype is ready, the aim is to work with a small number of experienced UK breeders and creators. Testing is not open yet. The priority will be long-duration use, careful fault reporting and candid feedback.</p>
+        <a class="text-link" href="#contact">Follow the development <span aria-hidden="true">→</span></a>
+      </aside>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Follow the build.<br>Ask a question.</h2>
+        <p>A project email and verified social links will be added here when they are ready. Until then, this page will not pretend to send a message anywhere.</p>
+        <p class="contact-status"><span class="status-dot status-dot--offline" aria-hidden="true"></span><strong>Enquiry channel:</strong> being prepared</p>
+      </div>
+      <div class="contact-reasons" aria-label="Future enquiry categories">
+        <p>Planned enquiry routes</p>
+        <ul><li>Product questions</li><li>Supplier enquiries</li><li>Manufacturing enquiries</li><li>Future testing interest</li><li>Media or creator enquiries</li></ul>
+        <p class="handle-note">Planned social handle <strong>@rackstatuk</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div><a class="brand brand--footer" href="#home"><span class="brand-mark" aria-hidden="true"><span>RS</span></span><span class="brand-name">RackStat</span></a><p>Designed for racks. Built for the people responsible for them.</p></div>
+      <dl><div><dt>Built</dt><dd>Built in Scotland</dd></div><div><dt>Status</dt><dd>V1 in active development</dd></div><div><dt>Domain</dt><dd>rackstat.co.uk</dd></div></dl>
+    </div>
+    <div class="footer-meta"><p>© <span data-current-year>2026</span> RackStat</p><nav aria-label="Legal"><a href="pages/privacy.html">Privacy</a><a href="pages/terms.html">Terms</a><a href="#contact">Contact</a></nav></div>
+  </footer>
+</body>
+</html>

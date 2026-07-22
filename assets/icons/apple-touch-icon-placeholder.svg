@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title">
+  <title id="title">RackStat placeholder app icon</title>
+  <rect width="180" height="180" rx="18" fill="#171a15"/>
+  <rect x="15" y="15" width="150" height="150" fill="none" stroke="#5f6659" stroke-width="4"/>
+  <rect x="25" y="25" width="10" height="10" fill="#db9236"/>
+  <rect x="145" y="145" width="10" height="10" fill="#db9236"/>
+  <path d="M53 121V59h30c18 0 29 9 29 25 0 11-6 19-16 22l23 15H94l-17-14h-5v14H53Zm19-31h11c6 0 10-2 10-7 0-4-4-7-10-7H72v14Z" fill="#efeadd"/>
+</svg>
