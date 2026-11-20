@@ -15,7 +15,10 @@ Static, production-ready foundation for [rackstat.co.uk](https://rackstat.co.uk/
 │   ├── icons/
 │   └── images/
 └── pages/
+    ├── enclosures.html
     ├── privacy.html
+    ├── racks.html
+    ├── supplies.html
     └── terms.html
 ```
 
@@ -42,14 +45,15 @@ Open `index.html` directly in a browser, or serve the folder with any simple sta
 
 ## Routine content updates
 
-- Product copy and page sections live in `index.html`.
+- The homepage, founder’s note and thermostat development record live in `index.html`.
+- The arboreal bowl, nutrition project and product tiers live in `pages/supplies.html`. The rack and enclosure concepts have their own pages.
 - Colours, spacing and responsive layout live in `styles.css`; the core design tokens are at the top of the file.
 - Mobile navigation, current-year output and active section navigation live in `scripts.js`.
 - Future social URLs can be added to the `socialLinks` configuration object near the top of `scripts.js`. Empty entries are intentionally not shown.
 
 ## Accuracy rules
 
-RackStat is presented as a product in active development. Keep completed prototype work separate from planned V1 features. Do not add certification, release-date, pricing, customer-count or performance claims until they are factually supported.
+The site covers products in development. Keep completed prototype work separate from planned features. Publish certification, release dates, prices and performance figures once they are supported. Nutrition copy covers research aims and ingredient sourcing interests. Review formulation, acceptance, stability and any organic claims against evidence before adding product claims.
 
 The interface data on the homepage is explicitly labelled as demonstration data and must not be represented as live telemetry.
 

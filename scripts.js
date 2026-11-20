@@ -11,7 +11,7 @@
 
   const navToggle = document.querySelector("[data-nav-toggle]");
   const siteNav = document.querySelector("[data-site-nav]");
-  const navLinks = siteNav ? Array.from(siteNav.querySelectorAll('a[href^="#"]')) : [];
+  const navLinks = siteNav ? Array.from(siteNav.querySelectorAll("a[href]")) : [];
 
   const closeNavigation = () => {
     if (!navToggle || !siteNav) return;
@@ -48,8 +48,9 @@
     element.textContent = String(new Date().getFullYear());
   });
 
-  const observedSections = navLinks
-    .map((link) => document.querySelector(link.getAttribute("href")))
+  const sectionLinks = navLinks.filter((link) => link.getAttribute("href").startsWith("#"));
+  const observedSections = sectionLinks
+    .map((link) => document.getElementById(link.hash.slice(1)))
     .filter(Boolean);
 
   if ("IntersectionObserver" in window && observedSections.length) {
@@ -59,11 +60,9 @@
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-        if (!visible) return;
-
-        navLinks.forEach((link) => {
-          const isCurrent = link.getAttribute("href") === `#${visible.target.id}`;
-          if (isCurrent) link.setAttribute("aria-current", "page");
+        sectionLinks.forEach((link) => {
+          const isCurrent = visible && link.hash === `#${visible.target.id}`;
+          if (isCurrent) link.setAttribute("aria-current", "location");
           else link.removeAttribute("aria-current");
         });
       },
